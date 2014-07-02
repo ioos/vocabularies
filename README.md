@@ -109,36 +109,42 @@ Usage in SOS request parameters and XML responses. See the [http://code.google.c
 - _None, Not applicable_
 
 `*` _Preceded by /sml:SensorML/sml:member/sml:System_
-
 ### IOOS Organization Societal Sectors
 The [http://mmisw.org/ont/ioos/sector IOOS Organizational Societal Sector vocabulary (http://mmisw.org/ont/ioos/sector)] distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions. It is currently used primarily to specify the [http://mmisw.org/ont/ioos/definition/operatorSector operator sector], corresponding to the organization that manages and operates the monitoring station.
-
 The operator's societal sector is attributed as an operatorSector classifier in the SOS DescribeSensor response.
-
 The sector vocabulary does not distinguish *international*, non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency should be described with the term "gov_state". The identification of international providers is handled by specifying a required country name in the SensorML Operator role contact information. US-based organizations must be assigned "USA" as the country name.
-
 ### General and SWE Definitions
-
 The [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions] is an MMI vocabulary used for clarifying the meaning of roles, classifiers and other general terms used throughout the SOS web services, particularly the DescribeSensor SensorML response. It defines commonly used categories to facilitate interpretation, and may be of general value beyond the SOS services.
-
 The [http://mmisw.org/ont/ioos/swe_element_type IOOS SOS SWE Element Definitions Vocabulary] is a narrower MMI vocabulary of definitions that reflect specific IOOS conventions for use in standard SOS SWE elements. References available on the [http://mmisw.org/ont/ioos/swe_element_type MMI vocabulary page] give examples of where to use these terms in IOOS SWE SOS templates.
-
 ### Keywords 
-
 Recommendations for Keywords usage have yet to be developed. In the meantime, for local to regional provider the relevant IOOS RA should be used as a keyword, using the spelling from the [http://mmisw.org/ont/ioos/organization IOOS Organization vocabulary]. Additional recommended keywords include geographical regions and parameters (observed properties) served.
 
 ## Other vocabularies and vocabulary-related concepts 
-
 ### Higher-level categories and vocabulary mappings
-
 The background, IOOS use, and mappings of high-level categories and vocabulary mappings vocabularies for observed properties is partially described in [#References (1)]. Terms from these vocabularies may be useful as service Keywords and for other data-discovery uses. These MMI-based resources include:
   * [http://mmisw.org/ont/ioos/core_variable IOOS Core Variable Vocabulary]. "The 26 IOOS core variables"
   * [http://mmisw.org/ont/ioos/societal_areas IOOS Societal Benefit Areas]
   * [http://mmisw.org/ont/ioos/category IOOS Category Vocabulary]
 
 ### Units of Measure
-
 Units of Measure do not make up a vocabulary per se, but rather a mix of vocabulary terms and a syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]; UDUNITS is the de-facto standard in the CF convention. Versions of these units systems should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that includes comparisons of UDUNITS and UCUM, converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2]. Another relevant effort is [http://www.qudt.org/ QUDT], previously sponsored by NASA and now managed by a group that includes OGC O&M developer Simon Cox.
+## Vocabulary Search Testing
+### Testing capability of SPARQL queries to assist catalog searches
+Most catalog services provide some search mechanisms of the metadata fields. However, these tend to be limited to exact matches or specific fields but not able to find data that is somewhat related or same data that is labeled differently. Searching for like or similar terms is an important step towards improving the search capability within data catalogs like THREDDS or geoportal catalog services. In this section, IOOS is testing automated search capabilities and discovery of terms based on relationships established in mapping vocabulary. This is an attempt to create a tunnel or mechanism by which more intelligent searches can be made.
+But what is returned is only as good as the SPARQL query and the mappings in the vocabulary.
+### SPARQL Endpoint
+Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to issue SPARQL queries to vocabulary search services. SPARQL Endpoints can return the data in different formats (HTML, JSON, CSV, RDF, N3), but accessing all these formats is not always obvious. Of the Python code, SparqlWrapper seems to be the most robust (note: a github fork is also available). The MMI Endpoint returns XML, CSV, JSON, and HTML.
+As a proof-of-concept, python script examples were created to show how to submit a SPARQL query with a JSON return, being the easiest format of response to work with python.
+### SPARQL - Python Examples
+* [using urllib2 example_sparql_urllib2.ipynb] (http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_sparql_urllib2.ipynb)
+* [using SPARQLWrapper example_sparql_wrapper.py] (http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_sparql_wrapper.ipynb)
+
+### CSW - Python Examples
+* [Using OWSLIB-CSW to access NGDC Geoportal CSW (example_csw_ngdc_geoportal.ipynb)] (http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_csw_ngdc_geoportal.ipynb)
+
+## Visualizing Vocabularies, Mappings, and Search Results
+Developing recipes for geoportal programmers to issue SPARQL queries to MMI ORR is one key to demonstrating how MMI ORR can enhance catalog search. Another key to this development is to visualize what the search results are. Visualizing the terms and their mappings will be the next step in making registered vocabs on MMI ORR more useful.
+
 
 ## References
 
