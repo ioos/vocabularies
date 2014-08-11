@@ -148,6 +148,7 @@ Developing recipes for geoportal programmers to issue SPARQL queries to MMI ORR 
 ### Examples
 * [CF Standard Name Browser](http://mmisw.org/cfsn) ([Wiki](https://github.com/mmisw/cfsn/wiki))
 * [IOOS Parameter Vocabulary Visualizer](http://www.unc.edu/usr-bin/haines/orrviz.py) ([Code](https://github.com/nccoos/ioos-vocabulary-viz))
+* [IOOS Vocabulary SPARQL Query Development Example Page](http://www.unc.edu/~haines/orrioos.html)
 
 ## References
 
