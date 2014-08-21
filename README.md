@@ -135,6 +135,10 @@ But what is returned is only as good as the SPARQL query and the mappings in the
 ### SPARQL Endpoint
 Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to issue SPARQL queries to vocabulary search services. SPARQL Endpoints can return the data in different formats (HTML, JSON, CSV, RDF, N3), but accessing all these formats is not always obvious. Of the Python code, SparqlWrapper seems to be the most robust (note: a github fork is also available). The MMI Endpoint returns XML, CSV, JSON, and HTML.
 As a proof-of-concept, python script examples were created to show how to submit a SPARQL query with a JSON return, being the easiest format of response to work with python.
+
+### SPARQL - IOOS Examples
+* [IOOS Vocabulary SPARQL Query Development Example Page](http://www.unc.edu/~haines/orrioos.html)
+
 ### SPARQL - Python Examples
 * [using urllib2 example_sparql_urllib2.ipynb] (http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_sparql_urllib2.ipynb)
 * [using SPARQLWrapper example_sparql_wrapper.py] (http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_sparql_wrapper.ipynb)
@@ -148,6 +152,7 @@ Developing recipes for geoportal programmers to issue SPARQL queries to MMI ORR 
 ### Examples
 * [CF Standard Name Browser](http://mmisw.org/cfsn) ([Wiki](https://github.com/mmisw/cfsn/wiki))
 * [IOOS Parameter Vocabulary Visualizer](http://www.unc.edu/usr-bin/haines/orrviz.py) ([Code](https://github.com/nccoos/ioos-vocabulary-viz))
+
 
 ## References
 
