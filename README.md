@@ -11,7 +11,7 @@ Questions about IOOS vocabularies, including policy, usage and request for new t
 
 Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions and machine readable online references.  This document describes the policies and relevant controlled vocabularies that have been adopted or developed by the IOOS community, including context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to serve consumers and providers, including software developers and data managers.  
 
-All controlled [vocabularies and vocabulary mappings developed or adopted by IOOS](http://mmisw.org/ont/ioos) (except for [Darwin Core biological terms](http://rs.tdwg.org/dwc/terms/) are currently hosted on the [Marine Metadata Interoperability (MMI) Ontology Registry and Repository](http://mmisw.org/orr/#b). These IOOS-endorsed vocabularies encompass all vocabularies required to support SOS and other data services: platform types, observed properties (also known as parameters, variables or phenomena), organizations, societal sectors, data decriptor definitions, etc.
+All controlled [vocabularies and vocabulary mappings developed or adopted by IOOS](http://mmisw.org/ont/ioos) except for [Darwin Core biological terms](http://rs.tdwg.org/dwc/terms/) are currently hosted on the [Marine Metadata Interoperability (MMI) Ontology Registry and Repository](http://mmisw.org/orr/#b). These IOOS-endorsed vocabularies encompass all vocabularies required to support SOS and other data services: platform types, observed properties (also known as parameters, variables or phenomena), organizations, societal sectors, data decriptor definitions, etc.
 
 ### Referencing Vocabulary Terms
 
@@ -41,7 +41,7 @@ The steps below provide an *outline of the general term identification and selec
 
 ### Selecting Controlled Vocabularies and Terms by Category
 
-This section describes the categories and specific instances of controlled vocabularies IOOS currently supports. Brief instructions for usage are provided, including links to more detailed resources. [#Other_vocabularies_and_vocabulary-related_concepts Additional, related concepts are also used in IOOS services], some of which have also been implemented as MMI vocabularies but have not been fully endorsed and described by IOOS.
+This section describes the categories and specific instances of controlled vocabularies IOOS currently supports. Brief instructions for usage are provided, including links to more detailed resources. [Additional, related concepts are also used in IOOS services](#other-vocabularies-and-vocabulary-related-concepts), some of which have also been implemented as MMI vocabularies but have not been fully endorsed and described by IOOS.
 
 ### Observed Properties 
 
@@ -54,7 +54,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
     [IOOS Parameter Vocabulary v.2.0](http://mmisw.org/ont/ioos/parameter). An MMI-hosted vocabulary (http://mmisw.org/ont/ioos/parameter) created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. It encompasses additional physical, chemical and biological terms not found among CF Standard Names. For convenience and completeness, this vocabulary incorporates CF terms that are widely used in IOOS. [An MMI-based ontological mapping has been created between IOOS Parameter and CF terms](http://mmisw.org/ont/ioos/map_ioos_cf), such that a reference to a term in one vocabulary is automatically linked to an appropriate term on the other vocabulary if such a match exists.
     [IOOS Biological Data Terminology](http://mmisw.org/ont/ioos/biological).  A vocabulary that lists biological data fields with names, descriptions, and format notes. It was based on ratified Darwin Core, Dublin Core and proposed IOOS vocabularies. XML guide was based on Darwin core XML guidance. CF Conventions had been applied to biological data definition at the field level. 
 
-[#References Haines et al (2012) (1)] have provided a detailed discussion of IOOS vocabulary strategy and use regarding observed properties, focusing mainly on physical and chemical properties (CF Standard Names and IOOS Parameter Vocabulary, above).
+[Haines et al (2012) (1)](#references) have provided a detailed discussion of IOOS vocabulary strategy and use regarding observed properties, focusing mainly on physical and chemical properties (CF Standard Names and IOOS Parameter Vocabulary, above).
 
 **Usage in SOS request parameters and XML responses.** See the [IOOS SOS Milestone 1.0 response templates for complete implementation details and direct reference](http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0).
 
@@ -73,7 +73,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
 
 ### Selecting a vocabulary term 
 
-The term identification and selection procedure [described above](#vocabulary-selection-and-use:-policy-and-process) should be used. a search for terms should start with Primary Vocabularies for observed properties, particularly the [CF Standard Names parameter vocabulary](http://mmisw.org/ont/cf/parameter). Where equivalent or nearly equivalent terms exist, CF terms are preferred over DwC terms. If an appropriate observed property term is not found among primary vocabularies, the secondary IOOS vocabularies listed above should be searched. 
+The term identification and selection procedure [described above](#vocabulary-selection-and-use-policy-and-process) should be used. a search for terms should start with Primary Vocabularies for observed properties, particularly the [CF Standard Names parameter vocabulary](http://mmisw.org/ont/cf/parameter). Where equivalent or nearly equivalent terms exist, CF terms are preferred over DwC terms. If an appropriate observed property term is not found among primary vocabularies, the secondary IOOS vocabularies listed above should be searched. 
 
 If the desired parameter is not found on primary or secondary vocabularies, IOOS should be notified and engaged to discuss adding the term to the IOOS Parameter Vocabulary, following a publicized and accepted process that's reasonably fast and a reasonably small burden on participants. In parallel, IOOS will maintain an engagement with the CF community to discuss adding parameters that are not currently present.
 
@@ -91,7 +91,7 @@ IOOS has implemented as MMI vocabularies two kinds of organization or institutio
 
 ### Organization Identifiers, and Corresponding Roles
 
-The MMI-hosted [IOOS Partner Organization vocabulary](http://mmisw.org/ont/ioos/organization)] provides list of organizations that serve in one or more IOOS partnership roles. The organization roles currently defined by IOOS are: [sponsor](http://mmisw.org/ont/ioos/definition/sponsor), [operator](http://mmisw.org/ont/ioos/definition/operator), [publisher](http://mmisw.org/ont/ioos/definition/publisher), and [parentNetwork](http://mmisw.org/ont/ioos/definition/parentNetwork).
+The MMI-hosted [IOOS Partner Organization vocabulary](http://mmisw.org/ont/ioos/organization) provides list of organizations that serve in one or more IOOS partnership roles. The organization roles currently defined by IOOS are: [sponsor](http://mmisw.org/ont/ioos/definition/sponsor), [operator](http://mmisw.org/ont/ioos/definition/operator), [publisher](http://mmisw.org/ont/ioos/definition/publisher), and [parentNetwork](http://mmisw.org/ont/ioos/definition/parentNetwork).
 
 All organizations, including IOOS, IOOS Regional Associations (RAs) and Federal Agencies, should be referenced using terms corresponding to standard RA and agency acronyms (eg, GLOS, SECOORA, USACE) as listed in the [IOOS Partner Organization vocabulary](http://mmisw.org/ont/ioos/organization). 
 
@@ -118,14 +118,16 @@ The [IOOS SOS SWE Element Definitions Vocabulary](http://mmisw.org/ont/ioos/swe_
 Recommendations for Keywords usage have yet to be developed. In the meantime, for local to regional provider the relevant IOOS RA should be used as a keyword, using the spelling from the [IOOS Organization vocabulary](http://mmisw.org/ont/ioos/organization). Additional recommended keywords include geographical regions and parameters (observed properties) served.
 
 ## Other vocabularies and vocabulary-related concepts 
+
 ### Higher-level categories and vocabulary mappings
-The background, IOOS use, and mappings of high-level categories and vocabulary mappings vocabularies for observed properties is partially described in [#References (1)]. Terms from these vocabularies may be useful as service Keywords and for other data-discovery uses. These MMI-based resources include:
+The background, IOOS use, and mappings of high-level categories and vocabulary mappings vocabularies for observed properties is partially described in [(1)](#references). Terms from these vocabularies may be useful as service Keywords and for other data-discovery uses. These MMI-based resources include:
   - [IOOS Core Variable Vocabulary](http://mmisw.org/ont/ioos/core_variable). "The 26 IOOS core variables"
   - [IOOS Societal Benefit Areas](http://mmisw.org/ont/ioos/societal_areas)
   - [IOOS Category Vocabulary](http://mmisw.org/ont/ioos/category)
 
 ### Units of Measure
 Units of Measure do not make up a vocabulary per se, but rather a mix of vocabulary terms and a syntax for combinations. At this time, IOOS encourages but does not require the use of [UCUM](http://unitsofmeasure.org/) or [UDUNITS](http://www.unidata.ucar.edu/software/udunits/); UDUNITS is the de-facto standard in the CF convention. Versions of these units systems should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [ERDDAP / NOAA CoastWatch has a very useful page that includes comparisons of UDUNITS and UCUM, converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2](http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html). Another relevant effort is [QUDT](http://www.qudt.org/), previously sponsored by NASA and now managed by a group that includes OGC O&M developer Simon Cox.
+
 ## Vocabulary Search Testing
 ### Testing capability of SPARQL queries to assist catalog searches
 Most catalog services provide some search mechanisms of the metadata fields. However, these tend to be limited to exact matches or specific fields but not able to find data that is somewhat related or same data that is labeled differently. Searching for like or similar terms is an important step towards improving the search capability within data catalogs like THREDDS or geoportal catalog services. In this section, IOOS is testing automated search capabilities and discovery of terms based on relationships established in mapping vocabulary. This is an attempt to create a tunnel or mechanism by which more intelligent searches can be made.
