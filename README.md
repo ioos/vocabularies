@@ -56,7 +56,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
 
 [#References Haines et al (2012) (1)] have provided a detailed discussion of IOOS vocabulary strategy and use regarding observed properties, focusing mainly on physical and chemical properties (CF Standard Names and IOOS Parameter Vocabulary, above).
 
-**Usage in SOS request parameters and XML responses.** See the [http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0 IOOS SOS Milestone 1.0 response templates for complete implementation details and direct reference.]
+**Usage in SOS request parameters and XML responses.** See the [IOOS SOS Milestone 1.0 response templates for complete implementation details and direct reference] (http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0).  
 
 | *SOS Operation*| *Request parameters*| *Response: XML block (XPath)*|
 |---------------------| :----------------------: |------------------:|
@@ -73,17 +73,17 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
 
 ### Selecting a vocabulary term 
 
-The term identification and selection procedure [#Vocabulary_Selection_and_Use described above] should be used. a search for terms should start with Primary Vocabularies for observed properties, particularly the [http://mmisw.org/ont/cf/parameter CF Standard Names parameter vocabulary]. Where equivalent or nearly equivalent terms exist, CF terms are preferred over DwC terms. If an appropriate observed property term is not found among primary vocabularies, the secondary IOOS vocabularies listed above should be searched. 
+The term identification and selection procedure [#Vocabulary_Selection_and_Use described above] should be used. a search for terms should start with Primary Vocabularies for observed properties, particularly the [CF Standard Names parameter vocabulary] (http://mmisw.org/ont/cf/parameter). Where equivalent or nearly equivalent terms exist, CF terms are preferred over DwC terms. If an appropriate observed property term is not found among primary vocabularies, the secondary IOOS vocabularies listed above should be searched. 
 
 If the desired parameter is not found on primary or secondary vocabularies, IOOS should be notified and engaged to discuss adding the term to the IOOS Parameter Vocabulary, following a publicized and accepted process that's reasonably fast and a reasonably small burden on participants. In parallel, IOOS will maintain an engagement with the CF community to discuss adding parameters that are not currently present.
 
 ### Composite Properties 
 
-The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary and should be referenced like any other term there (eg: http://mmisw.org/ont/ioos/parameter/wave). [https://code.google.com/p/ioostech/wiki/SOSGuidelines#Composite_phenomena Additional descriptions of IOOS guidance regarding composite properties are available elsewhere].
+The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary and should be referenced like any other term there (eg: http://mmisw.org/ont/ioos/parameter/wave). [Additional descriptions of IOOS guidance regarding composite properties are available elsewhere] (https://code.google.com/p/ioostech/wiki/SOSGuidelines#Composite_phenomena).
 
 ### Station Platform Types
 
-The [http://mmisw.org/ont/ioos/platform IOOS Platform Vocabulary (http://mmisw.org/ont/ioos/platform)] references and defines platform types used to describe each station asset. This vocabulary was developed by IOOS (with guidance from MMI) in 2012-2013 through a concerted effort drawing from current needs and previous IOOS and MMI experiences. [http://code.google.com/p/ioostech/wiki/PlatformVocabulary This effort, the vocabulary itself, and instructions for usage are described elsewhere.] The vocabulary of approximately 35 terms provides a consistent terminology to describe a wide array of platform types on which sensors are attached and data sets collected. These terms must be used as classifier entries in [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SML-DescribeSensor-Station.xml SOS DescribeSensor SensorML responses].
+The [IOOS Platform Vocabulary] (http://mmisw.org/ont/ioos/platform) references and defines platform types used to describe each station asset. This vocabulary was developed by IOOS (with guidance from MMI) in 2012-2013 through a concerted effort drawing from current needs and previous IOOS and MMI experiences. [http://code.google.com/p/ioostech/wiki/PlatformVocabulary This effort, the vocabulary itself, and instructions for usage are described elsewhere.] The vocabulary of approximately 35 terms provides a consistent terminology to describe a wide array of platform types on which sensors are attached and data sets collected. These terms must be used as classifier entries in [SOS DescribeSensor SensorML responses] (http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SML-DescribeSensor-Station.xml).
 
 ### Organization Descriptors and Roles
 
@@ -91,13 +91,13 @@ IOOS has implemented as MMI vocabularies two kinds of organization or institutio
 
 ### Organization Identifiers, and Corresponding Roles
 
-The MMI-hosted [http://mmisw.org/ont/ioos/organization IOOS Partner Organization vocabulary (http://mmisw.org/ont/ioos/organization)] provides list of organizations that serve in one or more IOOS partnership roles. The organization roles currently defined by IOOS are: [http://mmisw.org/ont/ioos/definition/sponsor sponsor], [http://mmisw.org/ont/ioos/definition/operator operator], [http://mmisw.org/ont/ioos/definition/publisher publisher], and [http://mmisw.org/ont/ioos/definition/parentNetwork parentNetwork].
+The MMI-hosted [IOOS Partners Organization vocabulary] (http://mmisw.org/ont/ioos/organization) provides list of organizations that serve in one or more IOOS partnership roles. The organization roles currently defined by IOOS are: [sponsor] (http://mmisw.org/ont/ioos/definition/sponsor), [operator] (http://mmisw.org/ont/ioos/definition/operator), [publisher] (http://mmisw.org/ont/ioos/definition/publisher), and [parentNetwork] (http://mmisw.org/ont/ioos/definition/parentNetwork).
 
-All organizations, including IOOS, IOOS Regional Associations (RAs) and Federal Agencies, should be referenced using terms corresponding to standard RA and agency acronyms (eg, GLOS, SECOORA, USACE) as listed in the  [http://mmisw.org/ont/ioos/organization IOOS Partner Organization vocabulary]. 
+All organizations, including IOOS, IOOS Regional Associations (RAs) and Federal Agencies, should be referenced using terms corresponding to standard RA and agency acronyms (eg, GLOS, SECOORA, USACE) as listed in the  [IOOS Partner Organization voabulary] (http://mmisw.org/ont/ioos/organization). 
 
-[http://mmisw.org/ont/ioos/definition/sponsor Asset platform sponsorship] is defined as financial or other kinds of support. Platforms that are partially or fully supported by IOOS must be attributed with a sponsor classifier entry of "IOOS" on the SOS DescribeSensor response; more than one sponsor organizations may be listed, as appropriate.
+[Asset platform sponsorship] (http://mmisw.org/ont/ioos/definition/sponsor) is defined as financial or other kinds of support. Platforms that are partially or fully supported by IOOS must be attributed with a sponsor classifier entry of "IOOS" on the SOS DescribeSensor response; more than one sponsor organizations may be listed, as appropriate.
 
-Usage in SOS request parameters and XML responses. See the [http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0 IOOS SOS Milestone 1.0 response templates] for complete implementation details and direct reference. 
+Usage in SOS request parameters and XML responses. See the [IOOS SOS Milestone 1.0 response templates] (http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0) for complete implementation details and direct reference. 
 
 |*SOS Operation*|*Response: XML block (XPath)*| *Comment* |
 |---------------------| :----------------------: |------------------:|
@@ -110,7 +110,7 @@ Usage in SOS request parameters and XML responses. See the [http://code.google.c
 
 `*` _Preceded by /sml:SensorML/sml:member/sml:System_
 ### IOOS Organization Societal Sectors
-The [http://mmisw.org/ont/ioos/sector IOOS Organizational Societal Sector vocabulary (http://mmisw.org/ont/ioos/sector)] distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions. It is currently used primarily to specify the [http://mmisw.org/ont/ioos/definition/operatorSector operator sector], corresponding to the organization that manages and operates the monitoring station.
+The [IOOS Organizational Societal Sector vocabulary] (http://mmisw.org/ont/ioos/sector) distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions. It is currently used primarily to specify the [http://mmisw.org/ont/ioos/definition/operatorSector operator sector], corresponding to the organization that manages and operates the monitoring station.
 The operator's societal sector is attributed as an operatorSector classifier in the SOS DescribeSensor response.
 The sector vocabulary does not distinguish *international*, non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency should be described with the term "gov_state". The identification of international providers is handled by specifying a required country name in the SensorML Operator role contact information. US-based organizations must be assigned "USA" as the country name.
 ### General and SWE Definitions
