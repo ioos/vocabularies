@@ -73,7 +73,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
 
 ### Selecting a vocabulary term 
 
-The term identification and selection procedure [#Vocabulary_Selection_and_Use] (described above) should be used. a search for terms should start with Primary Vocabularies for observed properties, particularly the [CF Standard Names parameter vocabulary] (http://mmisw.org/ont/cf/parameter). Where equivalent or nearly equivalent terms exist, CF terms are preferred over DwC terms. If an appropriate observed property term is not found among primary vocabularies, the secondary IOOS vocabularies listed above should be searched. 
+The term identification and selection procedure [described above] (#Vocabulary_Selection_and_Use) should be used. a search for terms should start with Primary Vocabularies for observed properties, particularly the [CF Standard Names parameter vocabulary] (http://mmisw.org/ont/cf/parameter). Where equivalent or nearly equivalent terms exist, CF terms are preferred over DwC terms. If an appropriate observed property term is not found among primary vocabularies, the secondary IOOS vocabularies listed above should be searched. 
 
 If the desired parameter is not found on primary or secondary vocabularies, IOOS should be notified and engaged to discuss adding the term to the IOOS Parameter Vocabulary, following a publicized and accepted process that's reasonably fast and a reasonably small burden on participants. In parallel, IOOS will maintain an engagement with the CF community to discuss adding parameters that are not currently present.
 
