@@ -137,12 +137,12 @@ Recommendations for Keywords usage have yet to be developed. In the meantime, fo
 
 ## Higher-level categories and vocabulary mappings
 The background, IOOS use, and mappings of high-level categories and vocabulary mappings vocabularies for observed properties is partially described in [(1)](#references). Terms from these vocabularies may be useful as service Keywords and for other data-discovery uses. These MMI-based resources include:
-  * [http://mmisw.org/ont/ioos/core_variable IOOS Core Variable Vocabulary]. "The 26 IOOS core variables"
-  * [http://mmisw.org/ont/ioos/societal_areas IOOS Societal Benefit Areas]
-  * [http://mmisw.org/ont/ioos/category IOOS Category Vocabulary]
+  * [http://mmisw.org/ont/ioos/core_variable] (IOOS Core Variable Vocabulary). "The 26 IOOS core variables"
+  * [http://mmisw.org/ont/ioos/societal_areas] (IOOS Societal Benefit Areas)
+  * [http://mmisw.org/ont/ioos/category] (IOOS Category Vocabulary)
 
 ## Units of Measure
-Units of Measure do not make up a vocabulary per se, but rather a mix of vocabulary terms and a syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]; UDUNITS is the de-facto standard in the CF convention. Versions of these units systems should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that includes comparisons of UDUNITS and UCUM, converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2]. Another relevant effort is [http://www.qudt.org/ QUDT], previously sponsored by NASA and now managed by a group that includes OGC O&M developer Simon Cox.
+Units of Measure do not make up a vocabulary per se, but rather a mix of vocabulary terms and a syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/] (UDUNITS); UDUNITS is the de-facto standard in the CF convention. Versions of these units systems should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html] (ERDDAP / NOAA CoastWatch) has a very useful page that includes comparisons of UDUNITS and UCUM, converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2. Another relevant effort is [http://www.qudt.org/] (QUDT), previously sponsored by NASA and now managed by a group that includes OGC O&M developer Simon Cox.
 
 # Vocabulary Search Testing
 ## Testing capability of SPARQL queries to assist catalog searches
