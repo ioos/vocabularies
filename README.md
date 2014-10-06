@@ -172,6 +172,8 @@ Developing recipes for geoportal programmers to issue SPARQL queries to MMI ORR 
 * [CF Standard Name Browser](http://mmisw.org/cfsn) ([Wiki](https://github.com/mmisw/cfsn/wiki))
 * [IOOS Parameter Vocabulary Visualizer](http://www.unc.edu/usr-bin/haines/orrviz.py) ([Code](https://github.com/nccoos/ioos-vocabulary-viz))
 
+### [Use Cases for Implementing Vocabulary Search Concepts into the IOOS Catalog] (https://github.com/ioos/catalog/wiki/Use-Cases-for-Vocabulary-Search-Capability#use-cases-for-implementation-of-vocabulary-search-concepts-into-the-ioos-catalog-72) 
+
 
 # References
 
