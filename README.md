@@ -177,5 +177,5 @@ Developing recipes for geoportal programmers to issue SPARQL queries to MMI ORR 
 
 (1) Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. 2012. IOOS vocabulary and ontology strategy for observed properties. Proc. MTS/IEEE Oceans'12 (Hampton Roads, VA), [http://dx.doi:10.1109/OCEANS.2012.6405083](http://dx.doi.org/10.1109/OCEANS.2012.6405083). Final, submitted paper is available [here as pdf](http://ioostech.googlecode.com/files/IOOSVocabPaper_MTSOceans2012_HainesEtal_Final_copyrighted.pdf).
 
-(2) Graybeal, J., A. W. Isenor, and C. Rueda. 2012. Semantic mediation of vocabularies for ocean observing systems. Computers & Geosciences 40: 120-131, [http://dx.doi:10.1016/j.cageo.2011.08.002]. http://dx.doi:10.1016/j.cageo.2011.08.002. [pdf available here](https://marinemetadata.org/news/mmisemanticpaper2011)
+(2) Graybeal, J., A. W. Isenor, and C. Rueda. 2012. Semantic mediation of vocabularies for ocean observing systems. Computers & Geosciences 40: 120-131. http://dx.doi:10.1016/j.cageo.2011.08.002. [pdf available here](https://marinemetadata.org/news/mmisemanticpaper2011)
 
