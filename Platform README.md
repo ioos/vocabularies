@@ -8,24 +8,54 @@ By mapping the terms within this one vocabulary, a simple hierarchy of terms is 
 
 As part of developing the IOOS Platform Vocabulary it was important to identify what are valid terms for the vocabulary and identify what we mean by an asset, platform, sensor(s) and station. The following definitions helped to refine what terms should go in the IOOS Platform Vocabulary.
 
-|| Platform || A structure or vehicle designed to hold one or more sensors such that the intended oceanographic or atmospheric variable(s) can be monitored or measured in a manner designed for the ocean observing system or scientific hypotheses.  ||
-|| Sensor || A converter that measures a physical quantity and converts it into a signal which can be read by an observer or by an (today mostly electronic) instrument. Pasted from [http://en.wikipedia.org/wiki/Sensor <http://en.wikipedia.org/wiki/Sensor>] ||
-||Station || A fixed location where a platform might be deployed or observations taken for a finite period of time.||
-||Asset|| Any tangible or intangible system that is capable of being owned or controlled to produce something of value. For example, a temperature sensor or a buoy may be considered assets. Similarly, a dataset of salinity measurements or model output of surface currents may be also considered assets. ||
-||Observational Asset|| In situ fixed, in situ mobile, and remote sensing assets measuring atmospheric and oceanic variables. All non-modeling assets, including platforms, instruments, sensors, and variables, fit into this category.||
+*Platform
+  A structure or vehicle designed to hold one or more sensors such that the intended oceanographic or atmospheric variable(s) can be monitored or measured in a manner designed for the ocean observing system or scientific hypotheses.  
+*Sensor 
+  A converter that measures a physical quantity and converts it into a signal which can be read by an observer or by an (today mostly electronic) instrument. Pasted from [http://en.wikipedia.org/wiki/Sensor <http://en.wikipedia.org/wiki/Sensor>] 
+*Station 
+  A fixed location where a platform might be deployed or observations taken for a finite period of time.
+*Asset
+  Any tangible or intangible system that is capable of being owned or controlled to produce something of value. For example, a temperature sensor or a buoy may be considered assets. Similarly, a dataset of salinity measurements or model output of surface currents may be also considered assets. 
+*Observational Asset
+  In situ fixed, in situ mobile, and remote sensing assets measuring atmospheric and oceanic variables. All non-modeling assets, including platforms, instruments, sensors, and variables, fit into this category.
 
-= Platform Vocabulary Guidelines =
-  # No capitalization
-  # No acronyms (Remotely Operated Vehicle)
-  # Hierarchy is structured based on motility and environment.
+Platform Vocabulary Guidelines
+  1. No capitalization
+  2. No acronyms (Remotely Operated Vehicle)
+  3. Hierarchy is structured based on motility and environment.
 
-= Developing a List of Terms =
+Developing a List of Terms 
 
 With a firm definition of what a platform is, potential platform types were extracted from the 2011 IOOS Asset Inventory ([#Appendix_B__List_of_IOOS_Platform_Vocabulary_Terms Appendix B]), IOOS Regional Build-Out Plans ([#Appendix_C__Regional_Build_Out_Platform_Definitions Appendix C]) and SECOORA and NANOOS Asset Inventories ([#Appendix_D__SECOORA_and_NANOOS_Asset_Definitions Appendix D]).  This approach provided the most complete list of possible platforms related to assets within Regional Associations and within IOOS. This larger list was organized into a general hierarchy provided in ([#Appendix_A_Proposed_Hierarchical_structure Appendix A]).
 
-= Developing the Vocabulary = 
+Developing the Vocabulary 
 
-Each term was researched and definitions provided. Many of the resources and references are provided for each definition.  In addition, most of the platform types are provided with links to one or two images found through Internet Search engines like Google Images that were appropriate to the definition provided.  An example entry is given in the table. 
+Each term was researched and definitions provided. Many of the resources and references are provided for each definition.  In addition, most of the platform types are provided with links to one or two images found through Internet Search engines like Google Images that were appropriate to the definition provided.  An example entry is given in tableform. 
+
+
+Term	
+*drifting_buoy	
+
+Definition
+*Drifting buoys are free drifting platforms with a float or buoys that keep the drifter at the surface and underwater sails or sock that catch the current. They have sensors to make meteorological and oceanographic measurements, such as air pressure and water temperature, and by tracking their positions the surface currents can be determined. Some drifters also have sensors to measure wind and salinity.	
+
+Images
+*http://www.metoffice.gov.uk/weather/marine/observations/gathering_data/images/drifting_buoy.jpg, http://www.aoml.noaa.gov/phod/dac/drifterpic1.jpg, http://filemaker2-server.cbl.umces.edu/sensorimages/7265-SLDMB.gif
+
+References
+*UK Met Office, Observations from drifting buoys, http://www.metoffice.gov.uk/weather/marine/observations/gathering_data/buoys.html
+
+
+
+
+
+
+
+
+
+
+
+
 	
 || Term || Definition || Images	|| Reference || 
 || {{{drifting_buoy}}} || {{{Drifting buoys are free drifting platforms with a float or buoys that keep the drifter at the surface and underwater sails or sock that catch the current. They have sensors to make meteorological and oceanographic measurements, such as air pressure and water temperature, and by tracking their positions the surface currents can be determined. Some drifters also have sensors to measure wind and salinity.}}}|| {{{http://www.metoffice.gov.uk/weather/marine/observations/gathering_data/images/drifting_buoy.jpg, http://www.aoml.noaa.gov/phod/dac/drifterpic1.jpg, http://filemaker2-server.cbl.umces.edu/sensorimages/7265-SLDMB.gif}}} ||{{{UK Met Office, Observations from drifting buoys, http://www.metoffice.gov.uk/weather/marine/observations/gathering_data/buoys.html}}}||
