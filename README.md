@@ -13,7 +13,7 @@ See issue #2
   + TODO Short description
 + [Vocabulary Search Testing](#vocabulary-search-testing)
   + TODO Short description (Not sure this belongs on this page but it's probably fine for now.  It feels out of place but maybe all we need is a better transition)
-+ [ References](#references)
++ [References](#references)
 
 # Introduction
 
@@ -35,7 +35,7 @@ REST access to machine-friendly formats for MMI terms is straightforward, and is
 
 # Vocabulary Selection and Use 
 
-The first step to using controlled vocabularies is finding an appropriate one. [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Criteria for selecting the best controlled vocabulary should be based on:] Content; Is it community-maintained? Is it well-managed? Is it interoperable? IOOS-endorsed vocabularies described in this document generally meet these criteria; all terms found on these vocabularies are supported.
+The first step to using controlled vocabularies is finding an appropriate one. [Criteria for selecting the best controlled vocabulary should be based on:](http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about) Content; Is it community-maintained? Is it well-managed? Is it interoperable? IOOS-endorsed vocabularies described in this document generally meet these criteria; all terms found on these vocabularies are supported.
 
 Vocabulary users are required to search terms from IOOS-endorsed registered vocabularies on MMI or other well-established, community maintained vocabulary systems before proposing new terms. 
 
@@ -43,9 +43,9 @@ The [Climate and Forecast (CF) Standard Names Parameter Vocabulary](http://marin
 
 The steps below provide an outline of the general term identification and selection process to be followed by data providers:
 
-1. Search Primary Vocabularies When available and in wide use, IOOS will strive to adopt and support existing community vocabularies. Such "primary", IOOS-endorsed vocabularies should be searched first for selecting terms. Currently the use of primary community vocabularies is largely limited to [#Observed_Properties Observed Properties].
-2. Search Secondary Vocabularies. When a relevant term is not found among primary vocabularies, IOOS-maintained "secondary" vocabularies should be searched. [http://mmisw.org/ont/ioos Such vocabularies are hosted on MMI] and are described in the sections below, by vocabulary topic.
-3. Propose and Adopt New Terms. When primary and secondary vocabularies don't contain a relevant term, a new term can be adopted by borrowing from other, non-IOOS vocabularies, or developing it following common naming conventions [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/guidelines such as CF Standard Names naming conventions]. The data provider does not need approval before implementing new terms. However, the provider must confer with the IOOS Program Office about new terms, in order to maintain the highest level of interoperability. The IOOS Program will facilitate the process to include new terms in the appropriate IOOS registered vocabulary or seek approval of term with the CF standard community or another accepted vocabulary standards group. The IOOS Program will notify the data provider when the term has been registered.
+1. Search Primary Vocabularies When available and in wide use, IOOS will strive to adopt and support existing community vocabularies. Such "primary", IOOS-endorsed vocabularies should be searched first for selecting terms. Currently the use of primary community vocabularies is largely limited to [Observed Properties](#Observed_Properties).
+2. Search Secondary Vocabularies. When a relevant term is not found among primary vocabularies, IOOS-maintained "secondary" vocabularies should be searched. [Such vocabularies are hosted on MMI](http://mmisw.org/ont/ioos) and are described in the sections below, by vocabulary topic.
+3. Propose and Adopt New Terms. When primary and secondary vocabularies don't contain a relevant term, a new term can be adopted by borrowing from other, non-IOOS vocabularies, or developing it following common naming conventions [such as CF Standard Names naming conventions](http://cf-pcmdi.llnl.gov/documents/cf-standard-names/guidelines). The data provider does not need approval before implementing new terms. However, the provider must confer with the IOOS Program Office about new terms, in order to maintain the highest level of interoperability. The IOOS Program will facilitate the process to include new terms in the appropriate IOOS registered vocabulary or seek approval of term with the CF standard community or another accepted vocabulary standards group. The IOOS Program will notify the data provider when the term has been registered.
 
 This section describes the categories and specific instances of controlled vocabularies IOOS currently supports. Brief instructions for usage are provided, including links to more detailed resources. [Additional, related concepts are also used in IOOS services](#Other_vocabularies_and_vocabulary-related_concepts), some of which have also been implemented as MMI vocabularies but have not been fully endorsed and described by IOOS.
 
@@ -54,16 +54,17 @@ This section describes the categories and specific instances of controlled vocab
 IOOS supports the inclusion and standard referencing of a large set of observed properties (also referred to as phenomena, parameters, or variables). Any property encompassed by the following vocabularies is supported:
 
 1. _Primary Vocabularies_
-  * [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI-hosted vocabulary is located at http://mmisw.org/ont/cf/parameter . CF standard names focus on atmospheric and ocean physical and chemical terms, and pay limited attention to areas like biology and ecology.
+  * [Climate & Forecast (CF) Standard Names Parameter Vocabulary](http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about)
+  * The MMI-hosted vocabulary is located at http://mmisw.org/ont/cf/parameter. CF standard names focus on atmospheric and ocean physical and chemical terms, and pay limited attention to areas like biology and ecology.
   * For biological and biodiversity applications the [Darwin Core (DwC) biological terms](http://rs.tdwg.org/dwc/terms/ ).
 1. _Secondary Vocabularies_
   * [IOOS Parameter Vocabulary v.2.0](http://mmisw.org/ont/ioos/parameter). An MMI-hosted vocabulary created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. It encompasses additional physical, chemical and biological terms not found among CF Standard Names. For convenience and completeness, this vocabulary incorporates CF terms that are widely used in IOOS. [An MMI-based ontological mapping](http://mmisw.org/ont/ioos/map_ioos_cf) has been created between IOOS Parameter and CF terms, such that a reference to a term in one vocabulary is automatically linked to an appropriate term on the other vocabulary if such a match exists.
-  * [http://mmisw.org/ont/ioos/biological IOOS Biological Data Terminology].  A vocabulary that lists biological data fields with names, descriptions, and format notes. It was based on ratified Darwin Core, Dublin Core and proposed IOOS vocabularies. XML guide was based on Darwin core XML guidance. CF Conventions had been applied to biological data definition at the field level. 
+  * [IOOS Biologicah Data Terminology](http://mmisw.org/ont/ioos/biological).  A vocabulary that lists biological data fields with names, descriptions, and format notes. It was based on ratified Darwin Core, Dublin Core and proposed IOOS vocabularies. XML guide was based on Darwin core XML guidance. CF Conventions had been applied to biological data definition at the field level. 
 
 [Haines et al (2012) (1)](#references) have provided a detailed discussion of IOOS vocabulary strategy and use regarding observed properties, focusing mainly on physical and chemical properties (CF Standard Names and IOOS Parameter Vocabulary, above).
 
 **Usage in SOS request parameters and XML responses.** 
-See the IOOS SOS Milestone 1.0 [response templates](http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0) for complete implementation details and direct reference.
+See the IOOS SOS Milestone 1.0 [response templates](https://github.com/ioos/sos-guidelines/tree/master/template/milestone1.0) for complete implementation details and direct reference.
 
 | *SOS Operation*| *Request parameters*| *Response: XML block (XPath)*|
 |---------------------| :----------------------: |------------------:|
@@ -87,11 +88,11 @@ If the desired parameter is not found on primary or secondary vocabularies, IOOS
 
 ### Composite Properties 
 
-The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary and should be referenced like any other term there (eg: http://mmisw.org/ont/ioos/parameter/wave). [Additional descriptions of IOOS guidance regarding composite properties are available elsewhere. TODO: This URL must change to point to the new sos-guidelines on github](https://code.google.com/p/ioostech/wiki/SOSGuidelines#Composite_phenomena)
+The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary and should be referenced like any other term there (eg: http://mmisw.org/ont/ioos/parameter/wave). [Additional descriptions of IOOS guidance regarding composite properties are available from the IOOS SOS Milestone 1.0 WSDD](https://github.com/ioos/sos-guidelines/tree/master/doc/wsdd)
 
 ## Station Platform Types
 
-The [IOOS Platform Vocabulary](http://mmisw.org/ont/ioos/platform) references and defines platform types used to describe each station asset. This vocabulary was developed by IOOS (with guidance from MMI) in 2012-2013 through a concerted effort drawing from current needs and previous IOOS and MMI experiences. http://code.google.com/p/ioostech/wiki/PlatformVocabulary This effort, the vocabulary itself, and instructions for usage are described elsewhere. The vocabulary of approximately 35 terms provides a consistent terminology to describe a wide array of platform types on which sensors are attached and data sets collected. These terms must be used as classifier entries in [SOS DescribeSensor SensorML responses](http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SML-DescribeSensor-Station.xml).
+The [IOOS Platform Vocabulary](http://mmisw.org/ont/ioos/platform) references and defines platform types used to describe each station asset. This vocabulary was developed by IOOS (with guidance from MMI) in 2012-2013 through a concerted effort drawing from current needs and previous IOOS and MMI experiences. [This effort, the vocabulary itself, and instructions for usage are described elsewhere](http://code.google.com/p/ioostech/wiki/PlatformVocabulary). The vocabulary of approximately 35 terms provides a consistent terminology to describe a wide array of platform types on which sensors are attached and data sets collected. These terms must be used as classifier entries in [SOS DescribeSensor SensorML responses](http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SML-DescribeSensor-Station.xml).
 
 ## Organization Descriptors and Roles
 
@@ -104,7 +105,7 @@ All organizations, including IOOS, IOOS Regional Associations (RAs) and Federal 
 
 [Asset platform sponsorship](http://mmisw.org/ont/ioos/definition/sponsor) is defined as financial or other kinds of support. Platforms that are partially or fully supported by IOOS must be attributed with a sponsor classifier entry of "IOOS" on the SOS DescribeSensor response; more than one sponsor organizations may be listed, as appropriate.
 
-Usage in SOS request parameters and XML responses. See the [http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0 IOOS SOS Milestone 1.0 response templates] for complete implementation details and direct reference. 
+Usage in SOS request parameters and XML responses. See the [IOOS SOS Milestone 1.0 response templates] (http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0) for complete implementation details and direct reference. 
 
 |*SOS Operation*|*Response: XML block (XPath)*| *Comment* |
 |---------------------| :----------------------: |------------------:|
@@ -118,7 +119,7 @@ Usage in SOS request parameters and XML responses. See the [http://code.google.c
 `*` _Preceded by /sml:SensorML/sml:member/sml:System_
 
 ### IOOS Organization Societal Sectors
-The [http://mmisw.org/ont/ioos/sector IOOS Organizational Societal Sector vocabulary (http://mmisw.org/ont/ioos/sector)] distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions. It is currently used primarily to specify the [http://mmisw.org/ont/ioos/definition/operatorSector operator sector], corresponding to the organization that manages and operates the monitoring station.
+The [IOOS Organizational Societal Sector vocabulary](http://mmisw.org/ont/ioos/sector) distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions. It is currently used primarily to specify the [operator sector](http://mmisw.org/ont/ioos/definition/operatorSector), corresponding to the organization that manages and operates the monitoring station.
 The operator's societal sector is attributed as an operatorSector classifier in the SOS DescribeSensor response.
 The sector vocabulary does not distinguish *international*, non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency should be described with the term "gov_state". The identification of international providers is handled by specifying a required country name in the SensorML Operator role contact information. US-based organizations must be assigned "USA" as the country name.
 
@@ -127,16 +128,16 @@ The [IOOS Vocabulary and Category Definitions](http://mmisw.org/ont/ioos/definit
 The [IOOS SOS SWE Element Definitions Vocabulary](http://mmisw.org/ont/ioos/swe_element_type) is a narrower MMI vocabulary of definitions that reflect specific IOOS conventions for use in standard SOS SWE elements. References available on the [MMI vocabulary page](http://mmisw.org/ont/ioos/swe_element_type) give examples of where to use these terms in IOOS SWE SOS templates.
 
 ### Keywords 
-Recommendations for Keywords usage have yet to be developed. In the meantime, for local to regional provider the relevant IOOS RA should be used as a keyword, using the spelling from the [http://mmisw.org/ont/ioos/organization IOOS Organization vocabulary]. Additional recommended keywords include geographical regions and parameters (observed properties) served.
+Recommendations for Keywords usage have yet to be developed. In the meantime, for local to regional provider the relevant IOOS RA should be used as a keyword, using the spelling from the [IOOS Organization vocabulary](http://mmisw.org/ont/ioos/organization). Additional recommended keywords include geographical regions and parameters (observed properties) served.
 
 ## Higher-level categories and vocabulary mappings
 The background, IOOS use, and mappings of high-level categories and vocabulary mappings vocabularies for observed properties is partially described in [(1)](#references). Terms from these vocabularies may be useful as service Keywords and for other data-discovery uses. These MMI-based resources include:
-  * [http://mmisw.org/ont/ioos/core_variable IOOS Core Variable Vocabulary]. "The 26 IOOS core variables"
-  * [http://mmisw.org/ont/ioos/societal_areas IOOS Societal Benefit Areas]
-  * [http://mmisw.org/ont/ioos/category IOOS Category Vocabulary]
+  * [IOOS Core Variable Vocabulary](http://mmisw.org/ont/ioos/core_variable IOOS Core Variable Vocabulary).
+  * [IOOS Societal Benefit Areas](http://mmisw.org/ont/ioos/societal_areas)
+  * [IOOS Category Vocabulary](http://mmisw.org/ont/ioos/category)
 
 ## Units of Measure
-Units of Measure do not make up a vocabulary per se, but rather a mix of vocabulary terms and a syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]; UDUNITS is the de-facto standard in the CF convention. Versions of these units systems should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that includes comparisons of UDUNITS and UCUM, converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2]. Another relevant effort is [http://www.qudt.org/ QUDT], previously sponsored by NASA and now managed by a group that includes OGC O&M developer Simon Cox.
+Units of Measure do not make up a vocabulary per se, but rather a mix of vocabulary terms and a syntax for combinations. At this time, IOOS encourages but does not require the use of [UCUM](http://unitsofmeasure.org/) or [UDUNITS](http://www.unidata.ucar.edu/software/udunits/); UDUNITS is the de-facto standard in the CF convention. Versions of these units systems should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [ERDDAP/NOAA CoastWatch](http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html) has a very useful page that includes comparisons of UDUNITS and UCUM, converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2]. Another relevant effort is [QUDT](http://www.qudt.org/ QUDT), previously sponsored by NASA and now managed by a group that includes OGC O&M developer Simon Cox.
 
 # Vocabulary Search Testing
 ## Testing capability of SPARQL queries to assist catalog searches
@@ -151,8 +152,8 @@ As a proof-of-concept, python script examples were created to show how to submit
 * [IOOS Vocabulary SPARQL Query Development Example Page](http://www.unc.edu/~haines/orrioos.html)
 
 ## SPARQL - Python Examples
-* [using urllib2 example_sparql_urllib2.ipynb] (http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_sparql_urllib2.ipynb)
-* [using SPARQLWrapper example_sparql_wrapper.py] (http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_sparql_wrapper.ipynb)
+* [using urllib2 example_sparql_urllib2.ipynb](http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_sparql_urllib2.ipynb)
+* [using SPARQLWrapper example_sparql_wrapper.py](http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_sparql_wrapper.ipynb)
 
 ## CSW - Python Examples
 * [Using OWSLIB-CSW to access NGDC Geoportal CSW (example_csw_ngdc_geoportal.ipynb)] (http://nbviewer.ipython.org/github/nccoos/ioos-vocabulary-search/blob/master/examples/example_csw_ngdc_geoportal.ipynb)
