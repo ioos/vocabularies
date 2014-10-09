@@ -1,0 +1,38 @@
+PlatformVocabulary  
+References and information about the IOOS Platform Vocabulary. 
+
+## Introduction
+•	Platform Vocabulary Guidelines
+•	Developing a List of Terms
+•	Developing the Vocabulary
+o	Displaying Images (STILL TO DO)
+o	Animal Platform Terms (STILL TO DO)
+•	Developing the Hierarchy (Mapping)
+•	IOOS SOS Implementation
+•	SPARQL Queries
+•	Platform Vocabulary Use Cases
+•	Existing Platform Vocabularies
+•	Who to Contact
+•	Appendices
+o	Appendix A Proposed Hierarchical structure
+o	Appendix B. List of IOOS Platform Vocabulary Terms
+o	Appendix C. Regional Build-Out Platform Definitions
+o	Appendix D. SECOORA and NANOOS Asset Definitions
+•	Discussion Forum
+
+
+The [IOOS Platform Vocabulary](http://mmisw.org/orr/#http://mmisw.org/ont/ioos/platform) is a controlled vocabulary for platform types with definitions, references used for the definition, and links to example images. It is registered at MMI-ORR <http://mmisw.org/ont/ioos/platform>. It provides oceanographic data users consistent terminology to describe a wide array of different platform types from which sensors are attached and data sets collected.
+
+By mapping the terms within this one vocabulary, a simple hierarchy of terms is provided. The list of IOOS Platform types was mapped hierarchically by using simple relationships between the terms within the vocabulary to identify general platform types. This was done by using the MMI-ORR Mapping Tool. By using this method some of the specific types of platforms can be members of more than one general type where one-to-many relationships are warranted. For example, a profiling_buoy can be a buoy platform type but also can be a profiler platform type.
+
+As part of developing the IOOS Platform Vocabulary it was important to identify what are valid terms for the vocabulary and identify what we mean by an asset, platform, sensor(s) and station. The following definitions helped to refine what terms should go in the IOOS Platform Vocabulary.
+
+*Platform	A structure or vehicle designed to hold one or more sensors such that the intended oceanographic or atmospheric variable(s) can be monitored or measured in a manner designed for the ocean observing system or scientific hypotheses.
+
+*Sensor	A converter that measures a physical quantity and converts it into a signal which can be read by an observer or by an (today mostly electronic) instrument. Pasted from <http://en.wikipedia.org/wiki/Sensor>
+
+*Station	A fixed location where a platform might be deployed or observations taken for a finite period of time.
+
+*Asset	Any tangible or intangible system that is capable of being owned or controlled to produce something of value. For example, a temperature sensor or a buoy may be considered assets. Similarly, a dataset of salinity measurements or model output of surface currents may be also considered assets.
+
+*Observational Asset	In situ fixed, in situ mobile, and remote sensing assets measuring atmospheric and oceanic variables. All non-modeling assets, including platforms, instruments, sensors, and variables, fit into this category.
