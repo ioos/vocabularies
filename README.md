@@ -3,8 +3,6 @@ vocabularies
 
 _IOOS Instructions and Guidelines for use of Controlled Vocabularies in IOOS-compliant data services_
 
-
-
 # Proposed Outline and Revision Goals
 See issue #2
 
@@ -33,7 +31,7 @@ MMI vocabulary terms are case sensitive and must be referenced accordingly.
 
 Specific term referencing patterns vary depending on service response encoding standards. [http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0 IOOS SOS Milestone 1.0 response templates] provide complete illustrations of all SOS vocabulary term referencing patterns.
 
-REST access to machine-friendly formats for MMI terms is straightforward, and is obtained by simply adding a format extension to the term reference URL; for example, see the [http://mmisw.org/ont/ioos/parameter/acidity.json JSON] and [http://mmisw.org/ont/ioos/parameter/acidity.rdf RDF] responses available for the acidity example above.
+REST access to machine-friendly formats for MMI terms is straightforward, and is obtained by simply adding a format extension to the term reference URL; for example, see the [JSON](http://mmisw.org/ont/ioos/parameter/acidity.json) and [RDF](http://mmisw.org/ont/ioos/parameter/acidity.rdf) responses available for the acidity example above.
 
 # Vocabulary Selection and Use 
 
@@ -59,7 +57,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
   * [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI-hosted vocabulary is located at http://mmisw.org/ont/cf/parameter . CF standard names focus on atmospheric and ocean physical and chemical terms, and pay limited attention to areas like biology and ecology.
   * For biological and biodiversity applications the [Darwin Core (DwC) biological terms](http://rs.tdwg.org/dwc/terms/ ).
 1. _Secondary Vocabularies_
-  * [IOOS Parameter Vocabulary v.2.0](http://mmisw.org/ont/ioos/parameter). An MMI-hosted vocabulary created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. It encompasses additional physical, chemical and biological terms not found among CF Standard Names. For convenience and completeness, this vocabulary incorporates CF terms that are widely used in IOOS. [ An MMI-based ontological [mapping](http://mmisw.org/ont/ioos/map_ioos_cf) has been created between IOOS Parameter and CF terms, such that a reference to a term in one vocabulary is automatically linked to an appropriate term on the other vocabulary if such a match exists.
+  * [IOOS Parameter Vocabulary v.2.0](http://mmisw.org/ont/ioos/parameter). An MMI-hosted vocabulary created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. It encompasses additional physical, chemical and biological terms not found among CF Standard Names. For convenience and completeness, this vocabulary incorporates CF terms that are widely used in IOOS. [An MMI-based ontological mapping](http://mmisw.org/ont/ioos/map_ioos_cf) has been created between IOOS Parameter and CF terms, such that a reference to a term in one vocabulary is automatically linked to an appropriate term on the other vocabulary if such a match exists.
   * [http://mmisw.org/ont/ioos/biological IOOS Biological Data Terminology].  A vocabulary that lists biological data fields with names, descriptions, and format notes. It was based on ratified Darwin Core, Dublin Core and proposed IOOS vocabularies. XML guide was based on Darwin core XML guidance. CF Conventions had been applied to biological data definition at the field level. 
 
 [Haines et al (2012) (1)](#references) have provided a detailed discussion of IOOS vocabulary strategy and use regarding observed properties, focusing mainly on physical and chemical properties (CF Standard Names and IOOS Parameter Vocabulary, above).
