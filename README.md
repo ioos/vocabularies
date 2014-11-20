@@ -4,7 +4,6 @@ vocabularies
 _IOOS Instructions and Guidelines for use of Controlled Vocabularies in IOOS-compliant data services_
 
 # Proposed Outline and Revision Goals
-See issue #2
 
 + [Introduction](#introduction)
 + [Referencing Vocabulary Terms](#referencing-vocabulary-terms)
