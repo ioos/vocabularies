@@ -28,7 +28,7 @@ Terms on MMI-hosted vocabularies are accessible as URL references pointing to hu
 
 MMI vocabulary terms are case sensitive and must be referenced accordingly.
 
-Specific term referencing patterns vary depending on service response encoding standards. [http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0 IOOS SOS Milestone 1.0 response templates] provide complete illustrations of all SOS vocabulary term referencing patterns.
+Specific term referencing patterns vary depending on service response encoding standards. [IOOS SOS Milestone 1.0 response](http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0) provide complete illustrations of all SOS vocabulary term referencing patterns.
 
 REST access to machine-friendly formats for MMI terms is straightforward, and is obtained by simply adding a format extension to the term reference URL; for example, see the [JSON](http://mmisw.org/ont/ioos/parameter/acidity.json) and [RDF](http://mmisw.org/ont/ioos/parameter/acidity.rdf) responses available for the acidity example above.
 
