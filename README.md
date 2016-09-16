@@ -59,6 +59,11 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
 1. _Secondary Vocabularies_
   * [IOOS Parameter Vocabulary v.2.0](http://mmisw.org/ont/ioos/parameter). An MMI-hosted vocabulary created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. It encompasses additional physical, chemical and biological terms not found among CF Standard Names. For convenience and completeness, this vocabulary incorporates CF terms that are widely used in IOOS. [An MMI-based ontological mapping](http://mmisw.org/ont/ioos/map_ioos_cf) has been created between IOOS Parameter and CF terms, such that a reference to a term in one vocabulary is automatically linked to an appropriate term on the other vocabulary if such a match exists.
   * [IOOS Biologicah Data Terminology](http://mmisw.org/ont/ioos/biological).  A vocabulary that lists biological data fields with names, descriptions, and format notes. It was based on ratified Darwin Core, Dublin Core and proposed IOOS vocabularies. XML guide was based on Darwin core XML guidance. CF Conventions had been applied to biological data definition at the field level. 
+1. _Vocabularies registered on MMI_
+  * [US IOOS and OBIS-USA Marine Biogeography Terms v2.1](http://mmisw.org/ont/ioos/marine_biogeography).
+  * [IOOS Core Variables to Climate Forecast Standard Name Map](http://mmisw.org/ont/ioos/ioos_core_cf_map)
+  * [IOOS Parameter to Climate Forecast Standard Name Map](http://mmisw.org/ont/ioos/map_ioos_cf)
+  * [IOOS Partner Organizations](http://mmisw.org/ont/ioos/organization)
 
 [Haines et al (2012) (1)](#references) have provided a detailed discussion of IOOS vocabulary strategy and use regarding observed properties, focusing mainly on physical and chemical properties (CF Standard Names and IOOS Parameter Vocabulary, above).
 
