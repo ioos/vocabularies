@@ -82,7 +82,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
   * [IOOS Core Variable Vocabulary](http://mmisw.org/ont/ioos/core_variable)
   * [IOOS Parameter to IOOS Parameter Map](http://mmisw.org/ont/ioos/map_ioos_ioos)
   * [IOOS Societal Benefit Area Definitions](http://mmisw.org/ont/ioos/societal_areas)
-  * [http://mmisw.org/ont/ioos/category](http://mmisw.org/ont/ioos/category)
+  * [IOOS Category Vocabulary](http://mmisw.org/ont/ioos/category)
   * [IOOS Core Variable Map](http://mmisw.org/ont/ioos/map_core_variable)
   * [IOOS Societal Benefit Areas Map](http://mmisw.org/ont/ioos/map_societal_areas)
   * [IOOS Organization Societal Sector](http://mmisw.org/ont/ioos/sector)
