@@ -1,3 +1,11 @@
+# Deprecation Notice  
+
+Please note, these guidelines are not actively maintained and and not considered to be active IOOS recommendations for vocabularies in data management.  Please consult the following sites for IOOS' current Data Management and Cyberinfrastructure guidelines/recommendations:
+
+1. IOOS DMAC Data Standards and Requirements: [https://ioos.noaa.gov/data/contribute-data/](https://ioos.noaa.gov/data/contribute-data/)
+2. IOOS DMAC Documentation Portal: [https://ioos.github.io](https://ioos.github.io) 
+
+
 Vocabularies
 ============
 
